@@ -1,0 +1,124 @@
+#svg_pic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: rgb(204,235,13);
+    background: linear-gradient(35deg, rgba(204,235,13,1) 0%, rgba(255,207,61,1) 100%);
+    display: block;
+}
+
+.letter{
+    position: absolute;
+    width: 55%;
+    height: 55%;
+}
+@keyframes letter1path {
+  100%{
+    offset-distance: 100%;
+  }
+    
+}
+@keyframes letter2path {
+    100%{
+      offset-distance: 100%;
+    }
+      
+  }
+#letter1{
+    top:24%;
+    left:-12%;
+    
+    offset-path: path('M 50,50 L 51,50 C100,50 200,0 50,100 Z');
+}
+#letter2{
+    top:24%;
+    left:59%;
+    offset-path: path('M 50,50 L 51,50 C50,0 0,0 0,50 Z');
+}
+#pic{
+    position: absolute;
+    top:26%;
+    left:28%;
+    width: 45%;
+    height: 45%;
+}
+#svg_pic:hover #letter1{
+    animation: letter1path 3s linear ;
+}
+#svg_pic:hover #letter2{
+    animation: letter2path 3s linear ;
+}
+@keyframes letter1size {
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+      
+  }
+
+  @keyframes letter2size {
+    100%{
+        width: 10%;
+        height: 10%;
+    }
+      
+  }
+#svg_pic:active #letter1{
+    animation: letter1size 3s linear ;
+    animation-fill-mode:forwards
+}
+#svg_pic:active #letter2{
+    animation: letter2size 3s linear ;
+    animation-fill-mode:forwards
+}
+@keyframes pic2opacity {
+    100%{
+        opacity: 1;
+    }
+      
+  }
+#pic2{
+    position: absolute;
+    top:26%;
+    left:25%;
+    width: 52%;
+    height: 46%;
+    opacity: 0;
+}
+@keyframes pic_textopacity {
+    100%{
+        opacity: 1;
+    }
+      
+  }
+#pic_text{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 39%;
+    opacity: 0;
+}
+#svg_pic:active #pic2{
+    animation: pic2opacity 3s linear ;
+    animation-fill-mode:forwards
+}
+
+#svg_pic:active #pic_text{
+    animation: pic_textopacity 3s linear ;
+    animation-fill-mode:forwards
+}
+@keyframes svg_pic_size{
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+      
+  }
+#svg_pic:active{
+    animation: svg_pic_size 3s linear ;
+    animation-fill-mode:forwards
+}

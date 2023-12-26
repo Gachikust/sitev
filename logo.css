@@ -1,0 +1,50 @@
+#logo{
+    --logo-color:black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+#strap{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top:0%;
+    left: 36%;
+    background-color: var(--logo-color);
+}
+#circle{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top:15%;
+    left: 16%;
+    border: 5px var(--logo-color) solid;
+    border-radius: 50%;
+    background-color: white;
+}
+#dot{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    border: 7px solid var(--logo-color);
+    border-radius: 50%;
+    top:43%;
+    left: 44%;
+}
+#hour{
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    top:28%;
+    left: 48%;
+    background-color: var(--logo-color);
+}
+#minut{
+    position: absolute;
+    width: 5%;
+    height: 25%;
+    top:32%;
+    left: 58%;
+    background-color: var(--logo-color);
+    transform: rotate(60deg);
+}

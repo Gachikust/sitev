@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>this is title</title>
+	<script src="boots.js"></script>
+	<link rel="stylesheet" href="boots.css">
+</head>
+<body>
+<header>
+	this is header
+</header>
+<div id="central">
+	
+	<input type="radio" id="femine" name="contact" value="femine"  />
+	<label for="femine">Женщина</label>
+    
+	<input type="radio" id="male" name="contact" value="male" checked />
+	<label for="male">Мужчина</label>
+   
+   <label for="name">Длина стопы (см) </label>
+	<input type="text" id="length" name="name" required minlength="4" maxlength="8" size="10" id="length"/>
+	
+	
+	<button type="button" id="btnConfirm" onclick="calculateBoots()">подтвердить данные</button>
+	
+</div>
+<footer>
+    this is footer
+	<a href="./index.html"> Main page</a>
+</footer>
+</body>
+</html>

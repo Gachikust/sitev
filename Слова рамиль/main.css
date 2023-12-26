@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --block-color:rgb(227 193 146);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-container{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+#word-tartget{
+    display: flex;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-top: 30px;
+    border: 3px solid black;
+    align-items: center;
+}
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+#words-appear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 500px;
+    border: 3px solid black;
+}
+.working-part{
+    position: relative;
+    width: 60%;
+    height: 500px;
+    border: 3px solid black;
+}
+.ui-block{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+    height: 3em;
+}
+.input{
+    width: 65%;
+}
+.button{
+    width: 35%;
+}
+#text-target{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-top: 30px;
+    border: 3px solid black;
+}
+.word{
+    
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    margin: 5px;
+}

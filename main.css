@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-gray-color: rgb(165, 165, 165);
+    --sub-first-color:rgb(120, 0, 84);
+    --sub-sec-color:rgb(208, 0, 142);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/* header*/
+header{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    align-items: center;
+}
+
+#logo{
+    transform: scale(0.5,0.5);
+}
+
+@media(min-width:0px) and (max-width: 800px) {
+    #header-info-main{
+        display: none;
+    }
+    #header-phone{
+        display: none;
+    }
+    #header-call{
+        display: none;
+    }
+    header nav{
+        width: 100%;
+    }
+    #logo{
+        display: none;
+    }
+}
+
+@media(min-width:800px) and (max-width: 8000px) {
+    #header-info-main{
+        width: 100%;
+        max-width: 20%;
+        font-size: 15px;
+    }
+    #header-phone{
+        font-weight: bold;
+        width: 100%;
+        max-width: 13%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--sub-sec-color);
+        color: white;
+    }
+    #header-call{
+        width: 100%;
+        height: 100%;
+        max-width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--sub-first-color);
+        color: white;
+    }
+    header nav{
+        width: 40%;
+    }
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-gray-color);
+    height: 100%;
+}
+
+header nav a{
+    height: 100%;
+    width: 100%;
+    max-width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav a:hover{
+    height: 100%;
+    width: 100%;
+    max-width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*Картинка стекстом на фоне*/
+@media(min-width:0px) and (max-width: 800px){
+    #info-block{
+        font-size: 14px;
+    }
+   
+}
+@media(min-width:0px) and (max-width: 800px){
+    #info-block{
+        max-width: 90%;
+        right: 0%;
+        bottom: 0%;
+        margin: auto;
+        font-size: 16px;
+    }
+    #main-info{
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+    }
+}
+@media(min-width:800px) and (max-width: 8000px){
+    #info-block{
+    position: absolute;
+    max-width: 40%;
+    right: 0%;
+    bottom: 64%;
+    font-size: 18px;
+    }
+}
+#main-info{
+    background-image: url("static/img/clock_img.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-block{
+    
+    color: white;
+}
+/*услуги*/
+@media(min-width:0px) and (max-width: 400px){
+    .service{
+        width: 100%;
+        margin: 3%;
+    }
+
+}
+@media(min-width:400px) and (max-width: 800px){
+    .service{
+        width: 40%;
+        margin: 3%;
+    }
+
+}
+@media(min-width:800px) and (max-width: 8000px){
+    .service{
+        width: 25%;
+        margin: 3%;
+    }
+}
+#services{
+    text-align: center;
+}
+.lable{
+    font-size: 30px;
+    font-weight: bold;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service{
+    display: flex;
+    border: 1px var(--sub-first-color) solid;
+    border-radius: 10px;
+
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.service img{
+    width: 80%;
+}
+/* Почему в наших мастерских выгоднее?*/
+
+@media(min-width:0px) and (max-width: 400px){
+    .reason{
+        width: 100%;
+        margin: 3%;
+    }
+
+}
+@media(min-width:400px) and (max-width: 800px){
+    .reason{
+        width: 40%;
+        margin: 3%;
+    }
+
+}
+@media(min-width:800px) and (max-width: 8000px){
+    .reason{
+        width: 25%;
+        margin: 3%;
+    }
+}
+#about-info{
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+}
+
+.reason-name{
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+.reason-info{
+    color: rgb(63, 63, 63);
+}
+/*footer*/
+footer{
+    background-color: rgb(52, 52, 52);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#messengers img{
+    width: 25px;
+    height: 25px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#service{
+    display: flex;
+    flex-direction: column;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,112 @@
+#pic-block{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(-45deg,blue,white);
+}
+#close{
+    position: relative;
+    border: 30px solid grey;
+    top: -230px;
+    left: -30px;
+    width: 200px;
+    height: 200px;
+    box-sizing: content-box;
+}
+#sun{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 100%;
+    left: -5px;
+    top: -2px;
+    
+}
+#arcs{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+.arc{
+
+    border: 5px solid gray;
+    width: 33%;
+    height: 150px;
+    border-radius: 50% 50% 0 0/25% 25% 0 0;
+}
+#ship-hull{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-top: 40px solid brown;
+	border-left: 20px solid transparent;
+	border-right: 25px solid transparent;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+#mast-container{
+    position: absolute;
+    top:20px;
+    width: 100px;
+    height: 110px;
+    left: 50px;
+
+
+}
+#mast{
+    position: absolute;
+    width: 8px;
+    height: 110px;
+    background-color: brown;
+    left: 50px;
+    bottom:-5px;
+}
+#sail{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid blue;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    left: 57px;
+}
+#sail-min{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12px solid red;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    left: 52px;
+}
+.bubble{
+    width: 75px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn,white,blue);
+}
+#bubble-1{
+    bottom: -5px;
+    left: -5px;
+}
+#bubble-2{
+    bottom: -11px;
+    left: 40px;
+}
+#bubble-3{
+    bottom: -10px;
+    left: 95px;
+}
+#bubble-4{
+    bottom: -13px;
+    left: 138px;
+}
+li{
+    position: absolute;
+
+}
